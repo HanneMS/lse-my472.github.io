@@ -97,7 +97,6 @@ There are 7 tables in total, and we will extract the first one.
 ```{r}
 data_pop <- html_table(wiki[[2]])
 str(data_pop)
-
 ```
 
 As in the previous case, we still need to clean the data before we can use it. For this particular example, let's see if this dataset provides evidence in support of [Zipf's law for population ranks](https://en.wikipedia.org/wiki/Zipf%27s_law).
