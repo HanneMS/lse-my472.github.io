@@ -47,6 +47,9 @@ Which of these has the most followers?
 ```{r}
 users[which.max(users$followers_count), ]
 users$screen_name[which.max(users$followers_count)]
+
+##make the text less junky
+user$description <- iconv(users$description, from = "UTF-8", to = "ASCII", sub="")
 ```
 
 ### Downloading recent tweets from a specific user
